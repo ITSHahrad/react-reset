@@ -5,7 +5,7 @@ program
 .command('config')
 .description('create configuration for react-reset package.')
 .action(async () => {
-  const { createConfig } = await import('../src/config.js');
+  const { createConfig } = await import('../dist/config.js');
   return createConfig();
 });
 
@@ -13,7 +13,7 @@ program
 .command('reset')
 .description('reset the react app to its initial version.')
 .action(async () => {
-  const reset = await import('../src/reset.js');
+  const reset = await import('../dist/reset.js');
   return reset.default();
 });
 

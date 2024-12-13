@@ -1,6 +1,6 @@
 {
   "name": "react-restart",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Reset the react projects to its initial version",
   "main": "bin/index.js",
   "bin": {
