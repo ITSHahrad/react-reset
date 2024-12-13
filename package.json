@@ -1,6 +1,6 @@
 {
   "name": "react-restart",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "Reset the react projects to its initial version",
   "main": "bin/index.js",
   "bin": {
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/ITSHahrad/react-restart.git"
   },
   "keywords": [
-    "react-restart"
+    "react-restart",
+    "react-restart-cli"
   ],
   "author": "ITSHahrad",
   "license": "MIT",
@@ -23,12 +24,11 @@
     "ansi-colors": "^4.1.3",
     "commander": "^12.1.0",
     "enquirer": "^2.4.1",
-    "fn": "^0.2.0",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "prettier": "^3.4.2"
   },
-   "files": [
+  "files": [
     "dist/**/*",
     "bin/**/*"
   ]
