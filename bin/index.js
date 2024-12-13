@@ -3,7 +3,7 @@ const { program } = require('commander');
 
 program
 .command('config')
-.description('create configuration for react-reset package.')
+.description('create configuration for react-restart package.')
 .action(async () => {
   const { configType } = await import('../dist/config.js');
   return configType();
