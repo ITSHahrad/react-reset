@@ -67,7 +67,9 @@ const createConfig = async () => {
       if (
         fileName.endsWith(".jsx") ||
         fileName.endsWith(".js") ||
-        fileName.endsWith(".css")
+        fileName.endsWith(".css") || 
+        fileName.endsWith(".tsx") ||
+        fileName.endsWith(".ts")
       ) {
         // Format using Prettier
         fileContent = await prettier.format(fileContent, {
