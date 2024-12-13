@@ -37,10 +37,10 @@ const submitReset = () => {
         try {
           if (isFile(fullPath)) {
             fs.unlinkSync(fullPath);
-            console.log(`${colors.blue(file)} ${colors.green("removed.")}`);
+            console.log(`${colors.yellow(file)} ${colors.green("removed.")}`);
           } else {
             fs.rmSync(fullPath, { recursive: true });
-            console.log(`${colors.blue(file)} ${colors.green("removed.")}`);
+            console.log(`${colors.yellow(file)} ${colors.green("removed.")}`);
           }
         } catch (error) {
           console.error(`Failed to remove ${file}\n${error}`);
@@ -61,7 +61,7 @@ const submitReset = () => {
       try {
         const fileData = fs.readFileSync(`./react/${file}`);
         fs.writeFileSync(`${srcPath}\\${file}`, fileData);
-        console.log(`${colors.blue(file)} ${colors.green("written!")}`);
+        console.log(`${colors.yellow(file)} ${colors.green("written!")}`);
       } catch (error) {
         console.error(`Error processing file ${file}\n${error}`);
       }
@@ -77,8 +77,8 @@ const resetApp = () => {
     prefix: "react reset:",
     message: "Are you sure about resetting your react app?",
     choices: [
-      { name: "yes", message: "Yes", value: true },
-      { name: "no", message: "No", value: false },
+      { name: "yes", message: colors.green("Yes"), value: true },
+      { name: "no", message: colors.red("No"), value: false },
     ],
     onCancel: () =>
       console.error("You cancelled the resetting operation!")

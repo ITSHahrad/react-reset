@@ -5,8 +5,8 @@ program
 .command('config')
 .description('create configuration for react-reset package.')
 .action(async () => {
-  const { createConfig } = await import('../dist/config.js');
-  return createConfig();
+  const { configType } = await import('../dist/config.js');
+  return configType();
 });
 
 program
