@@ -1,4 +1,4 @@
-<h1 align="center">React Reset 🧹</h1>
+<h1 align="center">React Restart 🧹</h1>
 
 A package for resetting your React project to its initial state with a simple command. The tool automatically cleans up specified files and directories, while preserving your configuration settings.
 
@@ -12,11 +12,18 @@ A package for resetting your React project to its initial state with a simple co
 
 ## Installation 🚀
 
-Install the package globally or locally using `npm` or `yarn`:
+Install the package globally or locally using `npm`:
 
 ```bash
-npm install -g react-reset
-# or
-yarn global add react-reset
+npm install react-restart
+```
+
+### Local installation 🍳
+Or install it with local `npm`:
+```bash
+git clone https://github.com/ITSHahrad/react-restart
+cd react-restart
+npm i 
+npm i -g .
 ```
 <h3 align="center">Developed by ITSHahrad with 💕 & ☕</h3>
