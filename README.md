@@ -1,3 +1,4 @@
+<p align="center"><img src="https://i.imgur.com/y51KqAy.png" width="120"/></p>
 <h1 align="center">React Restart 🧹</h1>
 
 A package for resetting your React project to its initial state with a simple command. The tool automatically cleans up specified files and directories, while preserving your configuration settings.

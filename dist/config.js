@@ -11,7 +11,7 @@ const config = {
   ], 
   "data": [
     {
-      "App.jsx": "import React from 'react';export default function App() { return <div>Hello, World!</div>; }",
+      "App.jsx": "import { useState } from 'react'; import './App.css'; function App() { const [count, setCount] = useState(0); return (<><div><a href="https://github.com/ITSHahrad/react-restart" target="_blank"><img src="https://i.imgur.com/y51KqAy.png" className="logo" alt="React Restart Logo" /></a></div><h1>Vite + React (Restart)</h1><div className="card"><button onClick={() => setCount((count) => count + 1)}>Love react restart {count} times 💕 </button><p>Edit <code>src/App.jsx</code> and save.</p></div><p className="read-the-docs">Click on the React Restart icon to know more!</p></></>); } export default App;",
       "index.css": "body { margin: 0; font-family: Arial, sans-serif; }",
       "main.jsx": "import React from 'react';import ReactDOM from 'react-dom';import App from './App';ReactDOM.render(<App />, document.getElementById('root'));",
       "App.css": "#root { max-width: 1280px; margin: 0 auto; padding: 2rem; text-align: center; } .logo { height: 6em; padding: 1.5em; will-change: filter; transition: filter 300ms; } .logo:hover { filter: drop-shadow(0 0 2em #646cffaa); } .logo.react:hover { filter: drop-shadow(0 0 2em #61dafbaa); } @keyframes logo-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } } @media (prefers-reduced-motion: no-preference) { a:nth-of-type(2) .logo { animation: logo-spin infinite 20s linear; } } .card { padding: 2em; } .read-the-docs { color: #888; }"
