@@ -23,7 +23,7 @@ npm install react-restart
 Or install it with local `npm`:
 ```bash
 git clone https://github.com/ITSHahrad/react-restart
-cd react-restart
+cd react-restart.git
 npm i 
 npm i -g .
 ```
