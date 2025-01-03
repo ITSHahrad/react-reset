@@ -16,7 +16,7 @@ const changeJsConfig = async () => {
       {
         "App.jsx": "import { useState } from 'react';function App(){const [count,setCount]=useState(0);return(<><div><a href='https://github.com/ITSHahrad/react-restart' target='_blank'><img src='https://i.imgur.com/y51KqAy.png' className='logo' alt='React Restart Logo'/></a></div><h1>Vite + React (Restart)</h1><div><button onClick={()=>setCount(count=>count+1)}>Love react restart {count} times 💕 </button><p>Edit <code>src/App.jsx</code> and save.</p></div><p>Click on the React Restart icon to know more!</p></>);}export default App;",
         "index.css": "body{min-width:100%;min-height:100vh;margin:0;font-family:Arial,sans-serif;background-color:#161518;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.logo{width:200px;transition:filter 1s}.logo:hover{filter:drop-shadow(0 0 2rem skyblue)}button{background-color:transparent;color:white;font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;font-weight:600;font-size:20px;border:2px solid white;padding:10px;border-radius:10px;cursor:pointer;transition:0.3s linear}button:hover{background-color:white;color:black}",
-        "main.jsx": "import App from './App.jsx';import { createRoot } from 'react-dom/client';createRoot(document.getElementById('root')).render(<App />);"
+        "main.jsx": "import App from './App.jsx';import './index.css';import { createRoot } from 'react-dom/client';createRoot(document.getElementById('root')).render(<App />);"
       }
     ]
   }
